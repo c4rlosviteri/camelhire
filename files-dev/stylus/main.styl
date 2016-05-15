@@ -1,0 +1,95 @@
+@import 'normalize.css'
+
+$verde = rgb(92,146,111)
+$amarillo = rgb(239,226,122)
+
+.splash
+	background $verde
+	height 100vh
+	padding-top 5rem
+	width 100vw
+	&-logo
+		margin 0
+		img
+			display block
+			margin-left auto
+			margin-right auto
+			width 240px
+	&-title
+		color $amarillo
+		font-family "Pacifico"
+		font-size 4rem
+		margin 0
+		text-align center
+	&-subtitle
+		color $amarillo
+		font-weight 300
+		font-size 1.25rem
+		text-align center
+	
+.verde
+	background $verde
+
+.reverse
+	transform rotate(180deg)
+
+
+.onboarding
+	height 100vh
+	padding-top 7rem
+	width 100vw
+	&-flecha
+		margin-top 4rem
+	&-wrapper
+		height 240px
+		margin 0 auto
+		padding 3rem
+		width 240px
+	&-img
+		display block
+		height 120px
+		margin 0 auto
+		margin-bottom 4rem
+		width 120px
+	h3
+		color $verde
+		font-size 1.5rem
+		font-weight 300
+		text-align center
+	&-puntitos
+		position fixed
+		bottom 3rem
+		left calc(50% - 55px)
+		width 110px
+		div
+			border 1px solid $verde
+			border-radius 50%
+			display inline-block
+			height 20px
+			margin 0 .5rem
+			width 20px
+		.active
+			background $verde
+
+.segunda-img
+	height 160px
+	width 160px
+	
+.brand-logo
+	font-family "Pacifico"
+	
+#search
+	padding 1.25rem 0 1.25rem 4rem 
+	
+.avatarmain
+	background rgba(0,0,0,0.1)
+	padding-top 2rem
+	img
+		display block
+		margin 0 auto
+		max-width 80px
+	a
+		text-align center
+.avatar-name
+	margin-top 1.5rem
+	height 30px !important
