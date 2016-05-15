@@ -70,6 +70,8 @@
           </a>
         </div>
 	 </section>
+	 <main id="main">
+	 </main>
   	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
@@ -79,20 +81,36 @@
 	(function(){
 		$(".button-collapse").sideNav();
 
-		var valorDeBusqueda = document.getElementById('search');
-		if (valorDeBusqueda.value == 'profesor') {
-
-		}
-		else if (valorDeBusqueda.value == 'mecanico' || valorDeBusqueda.value == 'mecánico') {
-
-		}
-		else if (valorDeBusqueda.value == 'niñera') {
-
-		}
-		else if (valorDeBusqueda.value == 'enfermera') {
-
-		}
-
+		$('#search').on('keypress',function(e){
+			e.preventDefault();
+			if ($(this).val() == "enfermera" || $(this).val() == "Enfermera") {
+				$('#main').html("1");
+			}
+			else if ($(this).val() == "mecanico" || $(this).val() == "Mecanico" || $(this).val() == "Mecánico" || $(this).val() == "mecánico") {
+				document.getElementById('main').innerHTML = "<div class="row">
+		        <div class="col s12 m7">
+		          <div class="card">
+		            <div class="card-image">
+		              <img src="assets/mecanico.jpg">
+		              <span class="card-title">Ernesto Aldaz</span>
+		            </div>
+		            <div class="card-content">
+		              <h5>Mecánico de automóviles</h5>
+		            </div>
+		            <div class="card-action">
+		              <a href="#">This is a link</a>
+		            </div>
+		          </div>
+		        </div>
+		      </div>"
+			}
+			else if ($(this).val() == "profesor" || $(this).val() == "Profesor") {
+				$('#main').html("3");
+			}
+			else if ($(this).val() == "niñera" || $(this).val() == "Niñera") {
+				$('#main').html("4");
+			}
+		});
 	})()
 	</script>
 
