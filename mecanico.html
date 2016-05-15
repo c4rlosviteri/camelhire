@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="assets/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Camel&Hire</title>
+  <link rel="stylesheet" href="files/css/main.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+
+  <nav>
+     <div class="nav-wrapper green darken-3">
+       <a href="app.html" class="brand-logo yellow-text lighten-5">Camel Hire</a>
+       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+       <ul class="right hide-on-med-and-down">
+         <li><a href="#!">Método de pago</a></li>
+         <ul>
+          <li>Tarjeta de crédito</li>
+          <li>Efectivo</li>
+         </ul>
+       </ul>
+       <ul class="side-nav" id="mobile-demo">
+         <li class="avatarmain">
+          <img src="assets/avatarmain.png" class="circle" class="center-align">
+          <a href="#!" class="avatar-name"><h5>Christian Gómez</h5></a>
+         </li>
+         <li><a href="#!"><i class="material-icons left">mode_edit</i> Editar perfil</a></li>
+         <li><a href="#!"><i class="material-icons left">attach_money</i> Pago efectivo</a></li>
+         <li><a href="#!"><i class="material-icons left">credit_card</i> Tarjeta de crédito</a></li>
+         <li><a href="#!"><i class="material-icons left">star</i> Favoritos</a></li>
+         <li><a href="#!"><i class="material-icons left">settings_power</i> Salir</a></li>
+       </ul>
+     </div>
+   </nav>
+
+  <div class="row">
+    <div class="col s12 m7">
+      <div class="card">
+        <div class="card-image">
+          <img src="assets/mapa.png">
+          <span class="card-title">Ubicación</span>
+        </div>
+        <div class="card-content">
+          <img src="assets/mecanico.jpg" class="profileavatar">
+          <div class="profileinfo">
+             <h5>Ernesto Aldaz</h5>
+          <h6>Mecánico de automóviles</h6>
+          </div>
+        </div>
+        <div class="card-action">
+          <a href="tel:095054678"><i class="material-icons left">call</i> 095054678</a>
+        </div>
+        <div class="card-action">
+          <a href="#"><i class="material-icons left">perm_identity</i> Masculino</a>
+        </div>
+        <div class="card-action">
+          <a href="#"><i class="material-icons left">shopping_cart</i> Efectivo</a>
+        </div>
+        <div class="card-action">
+        <div class="center-align">
+          <a href="#"><i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star_border</i>
+          <i class="material-icons">star_border</i></a>
+        </div>
+        </div>
+      </div>
+    </div>
+     <div class="row">
+        <h5 class="center-align">Comentarios</h5>
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-content white-text">
+              <span class="card-title card-title--wo black-text">Juan López</span>
+              <p class="black-text">Excelente atención!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-content white-text">
+              <span class="card-title card-title--wo black-text">Rosario Carrera</span>
+              <p class="black-text">Lo recomiendo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script>
+    (function () {
+      $(".button-collapse").sideNav();
+    })()
+    </script>
+</body>
+</html>
